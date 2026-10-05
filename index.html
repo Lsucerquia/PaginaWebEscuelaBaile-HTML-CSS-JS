@@ -1,0 +1,1823 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-surface font-body-md text-body-md text-on-surface">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-sm">
+          <img
+            alt="Minimalist and elegant dance logo icon. Fluid ribbon and energetic dynamic line forming the stylized silhouette of a dancer in motion, pirouette and rhythm, clean solid white background, vibrant crimson pink (#E11D48) and electric purple (#7C3AED) gradient strokes, vector badge, strictly no text, no letters, no typography. Design context: - Primary color: #e11d48
+            - Font: syne
+            - Mode: light
+            - Roundness: rounded-md
+            . The logo should be visually consistent with these brand tokens."
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1VT4sRQNOU9FOG9Jc3FM-5nGAJgMbvEa9LDHpWdrgGZp2ReBnGa1rfC9kbM8ZvgogM7j-77-tEIbedfLjWSB4t4COgux3V-QiGU1BoFAFVc2ysj73XJZgfqE9HhcIg13Wa5l-8gtmXF0s4vCOMef5eu6-BuclGJbSfwGxeBUtOOukDGHkRFDOByTYWlHoCogyxogczQG0kD12tSR5Q_d4xjg6F9_FvHObwh0pP0PdMcPLtiu280JsCVUEk"
+          /><span
+            class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
+            >Baila con estilo</span
+          >
+        </div>
+        <nav
+          class="hidden xl:flex items-center gap-space-lg"
+          data-active-classes="bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-full py-space-xs px-space-md"
+        >
+          <a
+            aria-current="page"
+            class="transition-colors bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-full py-space-xs px-space-md"
+            data-path="estilos"
+            href="#"
+            >Estilos</a
+          ><a
+            class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors py-space-xs px-space-sm rounded-full"
+            data-path="horarios"
+            href="#"
+            >Horarios</a
+          ><a
+            class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors py-space-xs px-space-sm rounded-full"
+            data-path="precios"
+            href="#"
+            >Precios</a
+          ><a
+            class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors py-space-xs px-space-sm rounded-full"
+            data-path="contacto"
+            href="#"
+            >Contacto</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm lg:gap-space-md">
+          <div class="hidden md:flex items-center gap-space-xs">
+            <a
+              aria-label="Instagram"
+              class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined text-[20px]"
+                >photo_camera</span
+              ></a
+            ><a
+              aria-label="TikTok"
+              class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined text-[20px]"
+                >music_note</span
+              ></a
+            ><a
+              aria-label="YouTube"
+              class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined text-[20px]"
+                >smart_display</span
+              ></a
+            >
+          </div>
+          <div class="flex items-center gap-space-sm">
+            <a
+              class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low px-space-md py-space-sm rounded-full transition-colors"
+              data-path="auth"
+              href="#"
+              >Iniciar Sesión / Registro</a
+            ><a
+              class="inline-flex items-center justify-center font-label-lg text-label-lg text-on-primary bg-primary hover:bg-primary-container px-space-lg py-space-sm rounded-full shadow-[0_4px_20px_-2px_rgba(225,29,72,0.25)] transition-all"
+              data-path="inscripcion"
+              href="#"
+              >Inscríbete</a
+            >
+            <div
+              class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shrink-0"
+            >
+              <span
+                class="material-symbols-outlined text-on-primary text-[18px]"
+                >person</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- HERO SECTION WITH BLEED OVER TRANSFORMATION -->
+        <section class="relative w-full -mt-20 overflow-hidden bg-on-surface">
+          <!-- Atmospheric Ambient Glows -->
+          <div
+            class="absolute -top-32 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/2 -right-32 w-[32rem] h-[32rem] bg-secondary/20 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="relative max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-20 lg:pt-40 lg:pb-28"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+            >
+              <!-- Hero Content (7 Cols) -->
+              <div class="lg:col-span-7 flex flex-col items-start z-10">
+                <!-- Overline Tag -->
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-surface mb-space-md"
+                >
+                  <span
+                    class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"
+                  ></span>
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-surface"
+                    >Temporada Abierta 2025</span
+                  >
+                </div>
+                <h1
+                  class="font-display-lg text-display-lg-mobile lg:text-display-lg text-surface tracking-tight mb-space-md leading-none"
+                >
+                  Despierta tu pasión por el baile y
+                  <span
+                    class="bg-gradient-to-r from-primary-container via-primary-fixed to-secondary text-transparent bg-clip-text"
+                    >muévete con estilo</span
+                  >
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-surface-container-highest/80 max-w-xl mb-space-xl"
+                >
+                  Clases para todos los niveles: Urbano, Latino, Contemporáneo y
+                  Clásico. Aprende con instructores profesionales en las mejores
+                  instalaciones de la ciudad.
+                </p>
+                <!-- Action CTAs -->
+                <div
+                  class="flex flex-wrap items-center gap-space-md mb-space-xl w-full sm:w-auto"
+                >
+                  <a
+                    class="inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg text-on-primary bg-gradient-to-r from-primary to-secondary hover:opacity-95 px-space-xl py-space-md rounded-full shadow-[0_8px_30px_rgba(225,29,72,0.35)] transition-all transform hover:-translate-y-0.5"
+                    href="#inscripcion"
+                  >
+                    <span>Reserva tu clase gratis</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                  <a
+                    class="inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg text-surface hover:text-surface-container-lowest bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 backdrop-blur-md px-space-xl py-space-md rounded-full transition-all"
+                    href="#estilos"
+                  >
+                    <span>Explorar Estilos</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >expand_more</span
+                    >
+                  </a>
+                </div>
+                <!-- Social Proof Badges -->
+                <div
+                  class="grid grid-cols-3 gap-space-md pt-space-lg w-full border-t border-surface-container-lowest/10"
+                >
+                  <div class="flex flex-col">
+                    <span
+                      class="font-headline-lg text-headline-lg text-surface font-bold tracking-tight"
+                      >+500</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-surface-container-highest/70"
+                      >Alumnos activos</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex items-center gap-1">
+                      <span
+                        class="font-headline-lg text-headline-lg text-surface font-bold tracking-tight"
+                        >4.9</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-primary text-[20px] star-filled"
+                        >star</span
+                      >
+                    </div>
+                    <span
+                      class="font-body-sm text-body-sm text-surface-container-highest/70"
+                      >Valoración media</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-headline-lg text-headline-lg text-surface font-bold tracking-tight"
+                      >12</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-surface-container-highest/70"
+                      >Instructores top</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Hero Image (5 Cols) with Asymmetric Dynamic Tilt Frame -->
+              <div class="lg:col-span-5 relative w-full flex justify-center">
+                <div
+                  class="relative w-full max-w-md lg:max-w-none aspect-[4/5] rounded-xl overflow-hidden shadow-[0_24px_60px_-12px_rgba(0,0,0,0.6)]"
+                >
+                  <img
+                    alt="Bailarines de contemporáneo y urbano en movimiento dinámico suspendidos en el aire con iluminación dramática"
+                    class="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1UInWI4OnVe12B9QH1a8P_98GCJC-8lov-CWcWU40Mhxsbb0IUoaq9r0_YMpXa2GVWD5qlrxoWZI6qZocrbJfcUPp19NcH_JD2leGZUn3dYy1bEUYkmJLun3W9FiLpHdMMo_BL0mGdwMHVTbPX9x-rsJlRada85SdDWJgaelqim6mwGWo28D1y2JIxRafM2RY_cDom4FEVRg76CFADBktobbfJUOJWfCxJi7_SAadjkVz20nGzCOHzGZg"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-transparent to-transparent"
+                  ></div>
+                  <!-- Live Pin Tag Floating -->
+                  <div
+                    class="absolute bottom-6 left-6 right-6 p-space-md rounded-lg bg-surface/90 backdrop-blur-xl shadow-lg flex items-center justify-between"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <span
+                        class="w-3 h-3 rounded-full bg-primary animate-ping"
+                      ></span>
+                      <div>
+                        <p
+                          class="font-label-md text-label-md text-on-surface font-bold"
+                        >
+                          Studio Central 1
+                        </p>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Próxima sesión: Hip Hop Fusion (18:30)
+                        </p>
+                      </div>
+                    </div>
+                    <span
+                      class="material-symbols-outlined text-secondary text-[24px]"
+                      >graphic_eq</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- QUICK ACCESS STRIP / LOGIN & STUDENT PORTAL BANNER -->
+        <section class="w-full bg-surface-container-high py-space-sm">
+          <div
+            class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-space-sm"
+          >
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-primary text-[20px]"
+                >how_to_reg</span
+              >
+              <span class="font-body-md text-body-md text-on-surface"
+                >¿Ya eres parte de nuestra academia? Accede a tu área
+                personal:</span
+              >
+            </div>
+            <div class="flex items-center gap-space-md">
+              <button
+                class="font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold underline underline-offset-4 cursor-pointer transition-colors"
+                onclick="
+                  document
+                    .getElementById('auth-modal')
+                    .classList.remove('hidden')
+                "
+              >
+                Portal del Alumno (Login)
+              </button>
+              <span class="text-on-surface-variant text-body-sm">•</span>
+              <a
+                class="font-label-lg text-label-lg text-secondary hover:text-secondary-container font-semibold transition-colors"
+                href="#inscripcion"
+              >
+                Nueva Inscripción
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- SECCIÓN ESTILOS DE BAILE -->
+        <section class="w-full py-space-xl lg:py-28 bg-surface" id="estilos">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <!-- Section Header -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl"
+            >
+              <div class="max-w-2xl">
+                <span
+                  class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider"
+                  >Cuerpo, ritmo y técnica</span
+                >
+                <h2
+                  class="font-headline-xl text-headline-xl text-on-surface mt-space-xs tracking-tight"
+                >
+                  Descubre tu estilo y vibra con la música
+                </h2>
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-sm"
+              >
+                Planes formativos adaptados desde cero hasta nivel competición.
+                Elige tu ritmo e inicia hoy.
+              </p>
+            </div>
+            <!-- Bento-style Card Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"
+            >
+              <!-- CARD 1: Urbano / Hip Hop -->
+              <div
+                class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div
+                  class="relative h-60 w-full overflow-hidden bg-surface-container"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    data-alt="Dancer in street style oversized hoodie freezing in an urban breakdance pose in an authentic raw industrial brick warehouse with smoke and cinematic cyan magenta rim lighting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ3U3HkfJZz5M0RR-85r1bqRHgrzXbZE2afhvvOOQBujR8cke3RmISLItbaaU4WYViJm_jfyc_X8xkNuSG5gpEivemFx9OI-R1m3ObZnVgaEXNmH4K5s4vFfm108Anmr3SWPnJ6n0_A7S2z_WXQyiph3BNdB7tk7V0o4RG9x0o9YKuoRnK0zhXViXy8oKYR6cpLzhIpAp_euZ4K8fWff3toc1MzkxeObnxHsQfGY3AsE4lFruoCFGG"
+                  />
+                  <div class="absolute top-4 left-4 flex gap-1">
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold"
+                      >Todos los niveles</span
+                    >
+                  </div>
+                  <div class="absolute top-4 right-4">
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-on-surface/80 backdrop-blur-md text-surface font-label-sm text-label-sm"
+                      >115 - 130 BPM</span
+                    >
+                  </div>
+                </div>
+                <div class="p-space-lg flex flex-col flex-1">
+                  <div class="flex items-center justify-between mb-space-xs">
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface font-bold"
+                    >
+                      Urbano &amp; Street
+                    </h3>
+                    <span
+                      class="material-symbols-outlined text-primary text-[24px]"
+                      >electric_bolt</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                  >
+                    Hip Hop, Dancehall, Locking y Popping. Energía explosiva,
+                    control corporal, groove y soltura sobre la pista.
+                  </p>
+                  <div
+                    class="mt-auto pt-space-sm flex items-center justify-between"
+                  >
+                    <div class="flex gap-1">
+                      <span class="w-2 h-2 rounded-full bg-primary"></span>
+                      <span class="w-2 h-2 rounded-full bg-primary"></span>
+                      <span
+                        class="w-2 h-2 rounded-full bg-surface-container-highest"
+                      ></span>
+                    </div>
+                    <button
+                      class="font-label-md text-label-md text-primary font-semibold hover:text-secondary flex items-center gap-1 transition-colors"
+                      onclick="selectStyle('Urbano &amp; Street')"
+                    >
+                      Ver grupos
+                      <span class="material-symbols-outlined text-[16px]"
+                        >chevron_right</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 2: Ritmos Latinos -->
+              <div
+                class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div
+                  class="relative h-60 w-full overflow-hidden bg-surface-container"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    data-alt="Couple gracefully dancing sensual bachata and salsa on polished wooden dance floor warm dramatic spotlight close embrace fluid movement passionate expressions"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtVln0iNzskWxXkZxs7G1SNv2kyxuqp9h_J9klK6ezeE8P_X0xASMNZzZjFOKHC0Y2Hf2TqM6nR3mlcScTfJNFLGDFV3u3Ntduu8MNwifbc89-PUONpbKGIFzK_v72JaJKXwG5SyTR_GgDlg3h-0F43iFQKvqXsf8pvdCh9z5TQenfD7k97c3YygjlEEFcN3Y1qFzOFLRgUpp2zTbUD1rl-UA-B01PygOlfIo19Hn_KX5P5t0i9kmo"
+                  />
+                  <div class="absolute top-4 left-4 flex gap-1">
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold"
+                      >Principiante &amp; Pro</span
+                    >
+                  </div>
+                  <div class="absolute top-4 right-4">
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-on-surface/80 backdrop-blur-md text-surface font-label-sm text-label-sm"
+                      >Social Dance</span
+                    >
+                  </div>
+                </div>
+                <div class="p-space-lg flex flex-col flex-1">
+                  <div class="flex items-center justify-between mb-space-xs">
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface font-bold"
+                    >
+                      Salsa &amp; Bachata
+                    </h3>
+                    <span
+                      class="material-symbols-outlined text-secondary text-[24px]"
+                      >local_fire_department</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                  >
+                    Salsa en línea, cubana, bachata sensual y tradicional.
+                    Aprende conexión, musicalidad y estilo de brazos con
+                    soltura.
+                  </p>
+                  <div
+                    class="mt-auto pt-space-sm flex items-center justify-between"
+                  >
+                    <div class="flex gap-1">
+                      <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    </div>
+                    <button
+                      class="font-label-md text-label-md text-secondary font-semibold hover:text-primary flex items-center gap-1 transition-colors"
+                      onclick="selectStyle('Salsa &amp; Bachata')"
+                    >
+                      Ver grupos
+                      <span class="material-symbols-outlined text-[16px]"
+                        >chevron_right</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 3: Contemporáneo & Lírico -->
+              <div
+                class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div
+                  class="relative h-60 w-full overflow-hidden bg-surface-container"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    data-alt="Contemporary female dancer leaping horizontally through atmospheric mist in a dance studio minimal aesthetic soft directional warm backlight expressing raw emotion"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuBIjZCnsl0DzyC4Bi8d1woRWyXnursNW8oh8PP00ssl1oYywl3nD44BC2OMA8q3C6LBOqSEwb0DcKRV_TLqR2nGo3L4AJnEM0LT6_x9HBapzLm2Pjnmdl1Vt2SmSs8CP2NhX0oAkel05NVc-KkTdr4WitDL7H1T4sVD9RXzfD4puEZAlwRxKG3qxhWlnLxvwMo08dY8ru-_FhDlM-dMX65qLUKaFZf1ovR3rByMs-b3Ql9wv2W9CW"
+                  />
+                  <div class="absolute top-4 left-4 flex gap-1">
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold"
+                      >Intermedio / Avanzado</span
+                    >
+                  </div>
+                  <div class="absolute top-4 right-4">
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-on-surface/80 backdrop-blur-md text-surface font-label-sm text-label-sm"
+                      >Expresión Libre</span
+                    >
+                  </div>
+                </div>
+                <div class="p-space-lg flex flex-col flex-1">
+                  <div class="flex items-center justify-between mb-space-xs">
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface font-bold"
+                    >
+                      Contemporáneo
+                    </h3>
+                    <span
+                      class="material-symbols-outlined text-primary text-[24px]"
+                      >waves</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                  >
+                    Fluidez en suelo (floorwork), transiciones orgánicas,
+                    improvisación guiada y trabajo de gravedad y suspensión.
+                  </p>
+                  <div
+                    class="mt-auto pt-space-sm flex items-center justify-between"
+                  >
+                    <div class="flex gap-1">
+                      <span class="w-2 h-2 rounded-full bg-primary"></span>
+                      <span class="w-2 h-2 rounded-full bg-primary"></span>
+                      <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    </div>
+                    <button
+                      class="font-label-md text-label-md text-primary font-semibold hover:text-secondary flex items-center gap-1 transition-colors"
+                      onclick="selectStyle('Contemporáneo')"
+                    >
+                      Ver grupos
+                      <span class="material-symbols-outlined text-[16px]"
+                        >chevron_right</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 4: Ballet Clásico & Barra -->
+              <div
+                class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div
+                  class="relative h-60 w-full overflow-hidden bg-surface-container"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    data-alt="Ballet dancer with pink satin pointe shoes warming up at wooden barre in sunlit luminous high ceiling studio soft focus elegant posture"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbAFa85t2v_dC6r3W6YsyikA2oDKDFa92EVhIhozbGkn_CRtR1YodfN9_WiDqJXrJfiWbF6R7M2CA9wI4LJ8GTUvZXuDIgH1Z2E0Sx73hqVgAFL4g9PVvTlcG0TMMLQlh3EkZjP0nkR2p_-Q4QIxoM_E99JE0k3P7HH8l2jFI-b_kRSZqHtwqa06NRo-bgrrjqesbjafBdYdxwWhSFfBWRk_Q4NeNtIojRI1MkHvOBdUY9Os2fhelp"
+                  />
+                  <div class="absolute top-4 left-4 flex gap-1">
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold"
+                      >Iniciación &amp; Técnica</span
+                    >
+                  </div>
+                  <div class="absolute top-4 right-4">
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-on-surface/80 backdrop-blur-md text-surface font-label-sm text-label-sm"
+                      >Fundamentos</span
+                    >
+                  </div>
+                </div>
+                <div class="p-space-lg flex flex-col flex-1">
+                  <div class="flex items-center justify-between mb-space-xs">
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface font-bold"
+                    >
+                      Ballet &amp; Barra
+                    </h3>
+                    <span
+                      class="material-symbols-outlined text-secondary text-[24px]"
+                      >accessibility_new</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                  >
+                    Alineación, fuerza del core, flexibilidad y equilibrio. La
+                    base biomecánica que potencia cualquier disciplina.
+                  </p>
+                  <div
+                    class="mt-auto pt-space-sm flex items-center justify-between"
+                  >
+                    <div class="flex gap-1">
+                      <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      <span
+                        class="w-2 h-2 rounded-full bg-surface-container-highest"
+                      ></span>
+                      <span
+                        class="w-2 h-2 rounded-full bg-surface-container-highest"
+                      ></span>
+                    </div>
+                    <button
+                      class="font-label-md text-label-md text-secondary font-semibold hover:text-primary flex items-center gap-1 transition-colors"
+                      onclick="selectStyle('Ballet &amp; Barra')"
+                    >
+                      Ver grupos
+                      <span class="material-symbols-outlined text-[16px]"
+                        >chevron_right</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECCIÓN HORARIOS Y MODALIDADES -->
+        <section
+          class="w-full py-space-xl lg:py-24 bg-surface-container-low"
+          id="horarios"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-space-xl">
+              <span
+                class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider"
+                >Planifica tu semana</span
+              >
+              <h2
+                class="font-headline-xl text-headline-xl text-on-surface mt-space-xs tracking-tight"
+              >
+                Horarios y Modalidades Flexibles
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-space-xs"
+              >
+                Elige el turno que mejor se adapte a tu rutina. Contamos con 3
+                salas climatizadas con suelo amortiguado de danza Harlequin.
+              </p>
+            </div>
+            <!-- Turn Tabs Filter -->
+            <div
+              class="flex flex-wrap items-center justify-center gap-space-xs mb-space-lg"
+            >
+              <button
+                class="schedule-tab active px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all"
+                onclick="filterSchedule('all', this)"
+              >
+                Todos los turnos
+              </button>
+              <button
+                class="schedule-tab px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container transition-all"
+                onclick="filterSchedule('morning', this)"
+              >
+                Mañanas (09:00 - 13:00)
+              </button>
+              <button
+                class="schedule-tab px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container transition-all"
+                onclick="filterSchedule('afternoon', this)"
+              >
+                Tardes (16:00 - 19:30)
+              </button>
+              <button
+                class="schedule-tab px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container transition-all"
+                onclick="filterSchedule('night', this)"
+              >
+                Noches (19:30 - 22:00)
+              </button>
+              <button
+                class="schedule-tab px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container transition-all"
+                onclick="filterSchedule('weekend', this)"
+              >
+                Fines de Semana
+              </button>
+            </div>
+            <!-- Schedule Dynamic Table Container -->
+            <div
+              class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl"
+            >
+              <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                  <thead>
+                    <tr
+                      class="bg-surface-container text-on-surface-variant font-label-md text-label-md"
+                    >
+                      <th class="py-space-md px-space-lg">Hora</th>
+                      <th class="py-space-md px-space-lg">
+                        Disciplina / Estilo
+                      </th>
+                      <th class="py-space-md px-space-lg">Nivel</th>
+                      <th class="py-space-md px-space-lg">
+                        Sala &amp; Instructor
+                      </th>
+                      <th class="py-space-md px-space-lg">Modalidad</th>
+                      <th class="py-space-md px-space-lg text-right">Plazas</th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="divide-y-0 text-on-surface font-body-md text-body-md"
+                    id="schedule-rows"
+                  >
+                    <tr
+                      class="hover:bg-surface-container-low transition-colors"
+                      data-turn="morning"
+                    >
+                      <td class="py-space-md px-space-lg font-semibold">
+                        10:00 - 11:15
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <div class="font-bold text-on-surface">
+                          Ballet Fit &amp; Barre
+                        </div>
+                        <span class="text-body-sm text-on-surface-variant"
+                          >Fuerza y postura consciente</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold"
+                          >Principiante</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        Sala A (Espejos) · Elena Sanz
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="inline-flex items-center gap-1 text-body-sm"
+                          ><span
+                            class="w-2 h-2 rounded-full bg-emerald-500"
+                          ></span
+                          >Presencial</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg text-right">
+                        <span class="text-primary font-bold">4 libres</span>
+                      </td>
+                    </tr>
+                    <tr
+                      class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest"
+                      data-turn="afternoon"
+                    >
+                      <td class="py-space-md px-space-lg font-semibold">
+                        17:00 - 18:30
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <div class="font-bold text-on-surface">
+                          Hip Hop Choreo Lab
+                        </div>
+                        <span class="text-body-sm text-on-surface-variant"
+                          >Secuencias rítmicas intermedias</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"
+                          >Intermedio</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        Sala B (Urban Lab) · Mateo Vega
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="inline-flex items-center gap-1 text-body-sm"
+                          ><span
+                            class="w-2 h-2 rounded-full bg-emerald-500"
+                          ></span
+                          >Presencial / Live</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg text-right">
+                        <span class="text-secondary font-bold">6 libres</span>
+                      </td>
+                    </tr>
+                    <tr
+                      class="hover:bg-surface-container-low transition-colors"
+                      data-turn="afternoon"
+                    >
+                      <td class="py-space-md px-space-lg font-semibold">
+                        18:30 - 20:00
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <div class="font-bold text-on-surface">
+                          Danza Contemporánea Lírica
+                        </div>
+                        <span class="text-body-sm text-on-surface-variant"
+                          >Floorwork y transiciones dinámicas</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold"
+                          >Avanzado</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        Sala A (Espejos) · Sara Ortiz
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="inline-flex items-center gap-1 text-body-sm"
+                          ><span
+                            class="w-2 h-2 rounded-full bg-emerald-500"
+                          ></span
+                          >Presencial</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg text-right">
+                        <span class="text-on-surface-variant font-semibold"
+                          >Últimas 2</span
+                        >
+                      </td>
+                    </tr>
+                    <tr
+                      class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest"
+                      data-turn="night"
+                    >
+                      <td class="py-space-md px-space-lg font-semibold">
+                        20:00 - 21:30
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <div class="font-bold text-on-surface">
+                          Bachata Sensual &amp; Técnica Social
+                        </div>
+                        <span class="text-body-sm text-on-surface-variant"
+                          >Conexión en pareja y ondas</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold"
+                          >Todos los niveles</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        Sala Central · Carlos &amp; Lucía
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="inline-flex items-center gap-1 text-body-sm"
+                          ><span
+                            class="w-2 h-2 rounded-full bg-emerald-500"
+                          ></span
+                          >Parejas / Individual</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg text-right">
+                        <span class="text-primary font-bold">8 libres</span>
+                      </td>
+                    </tr>
+                    <tr
+                      class="hover:bg-surface-container-low transition-colors"
+                      data-turn="weekend"
+                    >
+                      <td class="py-space-md px-space-lg font-semibold">
+                        Sáb 11:00 - 13:00
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <div class="font-bold text-on-surface">
+                          Masterclass Intensiva &amp; Jam
+                        </div>
+                        <span class="text-body-sm text-on-surface-variant"
+                          >Freestyle, cyphers y corrección</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"
+                          >Abierto</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        Estudio Completo · Invitados Pro
+                      </td>
+                      <td class="py-space-md px-space-lg">
+                        <span
+                          class="inline-flex items-center gap-1 text-body-sm"
+                          ><span
+                            class="w-2 h-2 rounded-full bg-amber-500"
+                          ></span
+                          >Especial Weekend</span
+                        >
+                      </td>
+                      <td class="py-space-md px-space-lg text-right">
+                        <span class="text-secondary font-bold">12 libres</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- Modalidades Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[24px]"
+                    >apartment</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                  >
+                    Estudio Presencial
+                  </h4>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mt-1"
+                  >
+                    Ambiente inmersivo, vestuarios con duchas y sonido
+                    envolvente de alta fidelidad.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[24px]"
+                    >person_celebrate</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                  >
+                    Clases Privadas 1 a 1
+                  </h4>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mt-1"
+                  >
+                    Preparación de audiciones, bailes nupciales y corrección
+                    técnica individual acelerada.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-surface text-[24px]"
+                    >sync_saved_locally</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                  >
+                    Pase Híbrido &amp; Grabaciones
+                  </h4>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mt-1"
+                  >
+                    Accede a las repeticiones en video de cada coreografía en tu
+                    portal de alumno.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECCIÓN PLANES Y PRECIOS TRANSPARENTES -->
+        <section class="w-full py-space-xl lg:py-28 bg-surface" id="precios">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-space-xl">
+              <span
+                class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider"
+                >Tarifas claras sin permanencia</span
+              >
+              <h2
+                class="font-headline-xl text-headline-xl text-on-surface mt-space-xs tracking-tight"
+              >
+                Elige el pase que acompaña tu ritmo
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-space-xs"
+              >
+                Sin matrícula de apertura este mes. Puedes pausar o cancelar tu
+                suscripción con un clic cuando lo necesites.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-stretch"
+            >
+              <!-- CARD 1: DROP-IN -->
+              <div
+                class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex justify-between items-center mb-space-sm">
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface font-bold"
+                    >
+                      Clase Suelta
+                    </h3>
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm"
+                      >Drop-in</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                  >
+                    Perfecto para probar una sesión o si tienes horarios
+                    rotativos.
+                  </p>
+                  <div class="flex items-baseline gap-1 mb-space-lg">
+                    <span
+                      class="font-display-lg text-display-lg-mobile text-on-surface font-extrabold"
+                      >$12</span
+                    >
+                    <span
+                      class="font-body-md text-body-md text-on-surface-variant"
+                      >/ sesión</span
+                    >
+                  </div>
+                  <ul
+                    class="space-y-space-sm mb-space-xl text-on-surface font-body-md text-body-md"
+                  >
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-emerald-600 text-[18px]"
+                        >check_circle</span
+                      >
+                      Acceso a cualquier clase individual
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-emerald-600 text-[18px]"
+                        >check_circle</span
+                      >
+                      Reserva válida por 30 días
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-emerald-600 text-[18px]"
+                        >check_circle</span
+                      >
+                      Vestuarios y taquilla incluida
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="w-full py-space-md px-space-md rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors text-center"
+                  onclick="openCheckout('Clase Suelta', '$12')"
+                >
+                  Comprar Pase Individual
+                </button>
+              </div>
+              <!-- CARD 2: PREMIUM ILIMITADO (FEATURED) -->
+              <div
+                class="relative p-space-xl rounded-xl bg-gradient-to-b from-surface-container-lowest to-primary-fixed/20 shadow-xl flex flex-col justify-between transform md:-translate-y-4"
+              >
+                <div
+                  class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-space-md py-1 rounded-full bg-gradient-to-r from-primary to-secondary text-on-primary font-label-sm text-label-sm font-bold uppercase tracking-wider shadow-md"
+                >
+                  MÁS POPULAR
+                </div>
+                <div>
+                  <div
+                    class="flex justify-between items-center mb-space-sm mt-1"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface font-bold"
+                    >
+                      Pase Premium Ilimitado
+                    </h3>
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold"
+                      >Todo Incluido</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                  >
+                    Acceso sin límites a todos los estilos, salas de práctica
+                    libre y eventos exclusivos.
+                  </p>
+                  <div class="flex items-baseline gap-1 mb-space-lg">
+                    <span
+                      class="font-display-lg text-display-lg text-primary font-extrabold"
+                      >$75</span
+                    >
+                    <span
+                      class="font-body-md text-body-md text-on-surface-variant"
+                      >/ mes</span
+                    >
+                  </div>
+                  <ul
+                    class="space-y-space-sm mb-space-xl text-on-surface font-body-md text-body-md"
+                  >
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px]"
+                        >check_circle</span
+                      >
+                      <strong>Clases ilimitadas</strong> en todos los estilos
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px]"
+                        >check_circle</span
+                      >
+                      Uso libre de estudios para ensayo
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px]"
+                        >check_circle</span
+                      >
+                      Descuento del 50% en Masterclasses
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px]"
+                        >check_circle</span
+                      >
+                      Acceso a biblioteca de grabaciones HD
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="w-full py-space-md px-space-md rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-95 text-on-primary font-label-lg text-label-lg shadow-lg shadow-primary/25 transition-all text-center"
+                  onclick="openCheckout('Pase Premium Ilimitado', '$75')"
+                >
+                  Empezar ahora
+                </button>
+              </div>
+              <!-- CARD 3: MENSUAL BÁSICO -->
+              <div
+                class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex justify-between items-center mb-space-sm">
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface font-bold"
+                    >
+                      Mensual Básico
+                    </h3>
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"
+                      >Constancia</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                  >
+                    La fórmula ideal para adquirir ritmo continuo y dominar tu
+                    disciplina favorita.
+                  </p>
+                  <div class="flex items-baseline gap-1 mb-space-lg">
+                    <span
+                      class="font-display-lg text-display-lg-mobile text-on-surface font-extrabold"
+                      >$45</span
+                    >
+                    <span
+                      class="font-body-md text-body-md text-on-surface-variant"
+                      >/ mes</span
+                    >
+                  </div>
+                  <ul
+                    class="space-y-space-sm mb-space-xl text-on-surface font-body-md text-body-md"
+                  >
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-emerald-600 text-[18px]"
+                        >check_circle</span
+                      >
+                      2 clases fijas por semana (8 al mes)
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-emerald-600 text-[18px]"
+                        >check_circle</span
+                      >
+                      Recuperación de clases perdidas
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-emerald-600 text-[18px]"
+                        >check_circle</span
+                      >
+                      Comunidad y jams abiertas
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="w-full py-space-md px-space-md rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors text-center"
+                  onclick="openCheckout('Mensual Básico', '$45')"
+                >
+                  Elegir Básico
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECCIÓN REDES SOCIALES Y COMUNIDAD -->
+        <section
+          class="w-full py-space-xl bg-surface-container-low overflow-hidden"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-space-lg mb-space-lg"
+            >
+              <div>
+                <span
+                  class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider"
+                  >#BailaConEstiloComunidad</span
+                >
+                <h2
+                  class="font-headline-xl text-headline-xl text-on-surface mt-space-xs"
+                >
+                  Siente el flow dentro y fuera del estudio
+                </h2>
+              </div>
+              <div class="flex flex-wrap items-center gap-space-sm">
+                <a
+                  class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm hover:shadow text-on-surface font-label-md text-label-md transition-all"
+                  href="#"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >photo_camera</span
+                  >
+                  <span>@bailaconestilo</span>
+                </a>
+                <a
+                  class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm hover:shadow text-on-surface font-label-md text-label-md transition-all"
+                  href="#"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[18px]"
+                    >music_note</span
+                  >
+                  <span>@baila_estilo</span>
+                </a>
+                <a
+                  class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm hover:shadow text-on-surface font-label-md text-label-md transition-all"
+                  href="#"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >smart_display</span
+                  >
+                  <span>YouTube Coreos</span>
+                </a>
+                <a
+                  class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm hover:shadow text-on-surface font-label-md text-label-md transition-all"
+                  href="#"
+                >
+                  <span
+                    class="material-symbols-outlined text-emerald-600 text-[18px]"
+                    >queue_music</span
+                  >
+                  <span>Spotify Playlists</span>
+                </a>
+              </div>
+            </div>
+            <!-- Live Media Collage -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+              <div
+                class="relative group rounded-xl overflow-hidden aspect-square bg-surface-container"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Dynamic group of young diverse urban dancers striking an energetic choreographic pose under studio neon lights looking directly into camera"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Yh6TxJ9Z-A7z9Nq_ejH936rP1TU1TT6PusGqIU2LXS8kOoqtlYgYkimPiSE8-sP5P-UceIj0m5r53LTD3XifTpRHpqoo3RQKGd9CMsKybrn97DDMLiOPFNXSNxKKz45Hn7O1GUAzP6Pu9nyWX_TG-bDUtma3GDXekYA8xVhT82KwJFrqAaaWUEk2iT-lNau-INjhUYkx26pq-Yf5I3belg4HYQDICFgpREUiW2TXFh06dKHzhSgn"
+                />
+                <div
+                  class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="material-symbols-outlined text-surface text-[32px]"
+                    >favorite</span
+                  >
+                </div>
+              </div>
+              <div
+                class="relative group rounded-xl overflow-hidden aspect-square bg-surface-container"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Intense salsa performance pair mid-spin red dresses blurred movement dynamic composition high emotion"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5O5jZxdrfcr-oGO_GZ62BfXbWASwLQeoO_CQthqJROWi0oO6ToQBMkAS_mMmzVgaQb_Czv4CCDlm6X8FeTb_aGVGEUQKMhN-fmnluTIpObc1vkj_je1yBkkZg6LJBjVkPry3wnJUq3ZZjr0EWx5uNOTQGFU5Xwx9WoSTag6iRmFaEqm7S7XJed3SLvDR8gSOiSyaSbBAli_5JBwzwae0w2kO1_IHMDilZmTPdi3MMCcOVbgqOW_Ti"
+                />
+                <div
+                  class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="material-symbols-outlined text-surface text-[32px]"
+                    >play_circle</span
+                  >
+                </div>
+              </div>
+              <div
+                class="relative group rounded-xl overflow-hidden aspect-square bg-surface-container"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Choreographer demonstrating delicate hands and arms movement in modern contemporary lyric dance masterclass with students behind"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT6V6Vg5K-L85uAv3jSVq-aLA39P_M5nlBGHKo4kk5numiHEJX16HAa6edVxw47kohvnuFRaAnJbbt6IVC3Cs44vqGVpC_PmR4tVsnFbgzDsIWs8bsEDtOsRV4zrzGcNtzYFS4Q9_NTSrMaS7m1_ivPoVXB4ynS0uYgWXG9E8MSzXZyloO9b2qZNTsE2Sc6HUdKkEut8fOFNnl_RP9XR4cwKOwxye_4IkazSc6xEtPIlv8hf9dU7Yr"
+                />
+                <div
+                  class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="material-symbols-outlined text-surface text-[32px]"
+                    >favorite</span
+                  >
+                </div>
+              </div>
+              <div
+                class="relative group rounded-xl overflow-hidden aspect-square bg-surface-container"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Dance students laughing together after rehearsal in studio holding water bottles vibrant authentic candid atmosphere"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGMvS2Q44ktJOUqhqDdohWjg1Ke_ZZVGJcKx0LaRfwZEEPbqYm7sxeQnbHT5Qm_FznsBIxR7k-E2_9xSSDUJ52iTOq0eGGbbZV7Sc4BUZaORgOGxLPe3HZdwy-mKwWJNzaaUsfVQYof1hAttJu4VZ9MHMadv7HnNTuzORpz-vY6iRDm_cbvAfgggxIp0dTgRXyhVmhB_vqWKqCQ69cdEQG4RLBt30aqTyM0RByByztQ493msdj6VKK"
+                />
+                <div
+                  class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="material-symbols-outlined text-surface text-[32px]"
+                    >mode_comment</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FORMULARIO DE RESERVA / INSCRIBETE -->
+        <section
+          class="w-full py-space-xl lg:py-28 bg-surface"
+          id="inscripcion"
+        >
+          <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div
+              class="bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-xl"
+            >
+              <div class="text-center max-w-xl mx-auto mb-space-lg">
+                <span
+                  class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider"
+                  >Tu primer paso</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg text-on-surface mt-1"
+                >
+                  Reserva tu Primera Clase Gratis
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-1"
+                >
+                  Sin compromisos ni cuotas ocultas. Ven a conocer las salas,
+                  los profesores y tu estilo.
+                </p>
+              </div>
+              <form
+                class="space-y-space-md"
+                id="reservation-form"
+                onsubmit="handleReservation(event)"
+              >
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-on-surface mb-1"
+                      >Nombre y Apellidos</label
+                    >
+                    <input
+                      class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md"
+                      placeholder="Ej. Claudia Morales"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-on-surface mb-1"
+                      >Correo Electrónico</label
+                    >
+                    <input
+                      class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md"
+                      placeholder="tu@email.com"
+                      required=""
+                      type="email"
+                    />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-on-surface mb-1"
+                      >Teléfono / WhatsApp</label
+                    >
+                    <input
+                      class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md"
+                      placeholder="+34 600 000 000"
+                      required=""
+                      type="tel"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-on-surface mb-1"
+                      >Estilo de Interés</label
+                    >
+                    <select
+                      class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md"
+                      id="style-select"
+                    >
+                      <option value="Urbano">
+                        Urbano / Hip Hop &amp; Street Dance
+                      </option>
+                      <option value="Latino">
+                        Ritmos Latinos / Salsa &amp; Bachata
+                      </option>
+                      <option value="Contemporaneo">
+                        Contemporáneo &amp; Lírico
+                      </option>
+                      <option value="Ballet">Ballet Clásico &amp; Barra</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label
+                    class="block font-label-md text-label-md text-on-surface mb-1"
+                    >¿Tienes experiencia previa bailando?</label
+                  >
+                  <div class="grid grid-cols-3 gap-space-xs">
+                    <label
+                      class="flex items-center gap-2 p- space-sm px-space-md rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container"
+                    >
+                      <input
+                        checked=""
+                        class="accent-primary"
+                        name="experiencia"
+                        type="radio"
+                        value="cero"
+                      />
+                      <span class="font-body-md text-body-md">Desde cero</span>
+                    </label>
+                    <label
+                      class="flex items-center gap-2 p- space-sm px-space-md rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container"
+                    >
+                      <input
+                        class="accent-primary"
+                        name="experiencia"
+                        type="radio"
+                        value="media"
+                      />
+                      <span class="font-body-md text-body-md"
+                        >Nivel intermedio</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center gap-2 p- space-sm px-space-md rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container"
+                    >
+                      <input
+                        class="accent-primary"
+                        name="experiencia"
+                        type="radio"
+                        value="avanzada"
+                      />
+                      <span class="font-body-md text-body-md"
+                        >Avanzado / Pro</span
+                      >
+                    </label>
+                  </div>
+                </div>
+                <div class="pt-space-sm">
+                  <button
+                    class="w-full py-space-md px-space-lg rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-95 text-on-primary font-label-lg text-label-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2"
+                    type="submit"
+                  >
+                    <span>Confirmar Mi Clase Gratuita</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >verified</span
+                    >
+                  </button>
+                  <p
+                    class="hidden text-center text-emerald-600 font-label-md text-label-md mt-space-sm"
+                    id="reservation-feedback"
+                  >
+                    ¡Excelente! Te hemos enviado un WhatsApp con la confirmación
+                    y acceso a la sala.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- WIDGET INTERACTIVO DE CHATBOT (VISIBLE DESPLEGADO EN ESQUINA INFERIOR DERECHA) -->
+        <aside
+          class="fixed bottom-6 right-6 z-40 w-[360px] max-w-[calc(100vw-2rem)] bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden flex flex-col transition-transform duration-300"
+          id="dance-bot-widget"
+        >
+          <!-- Chat Header -->
+          <div
+            class="bg-gradient-to-r from-primary to-secondary text-on-primary p-space-md flex items-center justify-between"
+          >
+            <div class="flex items-center gap-space-xs">
+              <div class="relative">
+                <div
+                  class="w-8 h-8 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-surface font-bold text-sm"
+                >
+                  💃
+                </div>
+                <span
+                  class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-surface-container-lowest"
+                ></span>
+              </div>
+              <div>
+                <h4
+                  class="font-label-lg text-label-lg text-surface font-bold leading-tight"
+                >
+                  Asistente Virtual
+                </h4>
+                <span
+                  class="font-body-sm text-body-sm text-surface/80 flex items-center gap-1"
+                  >Baila con Estilo · En línea 🟢</span
+                >
+              </div>
+            </div>
+            <div class="flex items-center gap-1">
+              <button
+                class="text-surface/80 hover:text-surface p-1 rounded-full hover:bg-surface-container-lowest/10 transition-colors"
+                onclick="toggleBotWidget()"
+                title="Minimizar"
+              >
+                <span
+                  class="material-symbols-outlined text-[20px]"
+                  id="bot-toggle-icon"
+                  >expand_more</span
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Chat Messages Scroll Area -->
+          <div class="flex flex-col" id="bot-body">
+            <div
+              class="p-space-md space-y-space-sm h-64 overflow-y-auto bg-surface-container-low text-body-md text-on-surface"
+              id="chat-messages"
+            >
+              <div class="flex items-start gap-2">
+                <div
+                  class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] shrink-0 mt-1"
+                >
+                  B
+                </div>
+                <div
+                  class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm max-w-[85%]"
+                >
+                  <p class="text-on-surface font-body-sm text-body-sm">
+                    ¡Hola! 💃 ¿Buscas horarios para algún estilo en particular o
+                    quieres reservar tu primera clase gratis?
+                  </p>
+                  <span
+                    class="text-[10px] text-on-surface-variant block text-right mt-1"
+                    >Ahora</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Quick Action Buttons -->
+            <div
+              class="p-space-xs px-space-sm bg-surface-container flex flex-wrap gap-1"
+            >
+              <button
+                class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-on-surface hover:text-primary font-label-sm text-label-sm shadow-sm transition-colors"
+                onclick="sendQuickReply('Ver horarios')"
+              >
+                Ver horarios
+              </button>
+              <button
+                class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-on-surface hover:text-primary font-label-sm text-label-sm shadow-sm transition-colors"
+                onclick="sendQuickReply('Precios de inscripción')"
+              >
+                Precios de inscripción
+              </button>
+              <button
+                class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-on-surface hover:text-primary font-label-sm text-label-sm shadow-sm transition-colors"
+                onclick="sendQuickReply('Hablar con recepción')"
+              >
+                Hablar con recepción
+              </button>
+            </div>
+            <!-- Input Bar -->
+            <form
+              class="p-space-sm bg-surface-container-lowest flex items-center gap-space-xs"
+              onsubmit="handleBotSubmit(event)"
+            >
+              <input
+                class="flex-1 px-space-md py-2 rounded-full bg-surface-container-low text-on-surface focus:outline-none focus:ring-1 focus:ring-primary font-body-md text-body-md text-sm"
+                id="chat-input"
+                placeholder="Escribe tu consulta..."
+                type="text"
+              />
+              <button
+                class="w-9 h-9 rounded-full bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow transition-colors"
+                type="submit"
+              >
+                <span class="material-symbols-outlined text-[18px]">send</span>
+              </button>
+            </form>
+          </div>
+        </aside>
+        <!-- MODAL DE ACCESO / LOGIN & REGISTRO -->
+        <div
+          class="hidden fixed inset-0 z-50 flex items-center justify-center bg-on-surface/60 backdrop-blur-sm p-4"
+          id="auth-modal"
+        >
+          <div
+            class="relative w-full max-w-md bg-surface-container-lowest rounded-xl shadow-2xl p-space-xl overflow-hidden animate-in fade-in zoom-in-95 duration-200"
+          >
+            <button
+              class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface p-1 rounded-full hover:bg-surface-container-low"
+              onclick="
+                document.getElementById('auth-modal').classList.add('hidden')
+              "
+            >
+              <span class="material-symbols-outlined text-[20px]">close</span>
+            </button>
+            <div class="flex items-center gap-space-xs mb-space-sm">
+              <span class="w-3 h-3 rounded-full bg-primary"></span>
+              <span
+                class="font-label-md text-label-md text-primary font-bold uppercase"
+                >Área de Alumnos</span
+              >
+            </div>
+            <h3
+              class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs"
+            >
+              Bienvenido de nuevo
+            </h3>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg"
+            >
+              Accede a tus reservas, coreografías grabadas y calendario de
+              ensayos.
+            </p>
+            <div class="space-y-space-md">
+              <div>
+                <label
+                  class="block font-label-md text-label-md text-on-surface mb-1"
+                  >Correo Electrónico</label
+                >
+                <input
+                  class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md"
+                  placeholder="alumno@bailaconestilo.com"
+                  type="email"
+                />
+              </div>
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <label class="font-label-md text-label-md text-on-surface"
+                    >Contraseña</label
+                  >
+                  <a
+                    class="font-body-sm text-body-sm text-primary hover:underline"
+                    href="#"
+                    >¿Olvidaste tu clave?</a
+                  >
+                </div>
+                <input
+                  class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md"
+                  placeholder="••••••••"
+                  type="password"
+                />
+              </div>
+              <button
+                class="w-full py-space-md rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md transition-colors mt-space-sm"
+                onclick="simulateAuth(this)"
+              >
+                Iniciar Sesión
+              </button>
+              <div class="text-center pt-space-xs">
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  ¿Nuevo en el estudio?
+                  <a
+                    class="text-secondary font-bold hover:underline"
+                    href="#inscripcion"
+                    onclick="
+                      document
+                        .getElementById('auth-modal')
+                        .classList.add('hidden')
+                    "
+                    >Regístrate para tu primera clase</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- INTERACTIVE SCRIPTS -->
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-xl">
+          <div>
+            <div class="flex items-center gap-space-sm mb-space-sm">
+              <img
+                alt="Baila con estilo"
+                class="h-8 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1VT4sRQNOU9FOG9Jc3FM-5nGAJgMbvEa9LDHpWdrgGZp2ReBnGa1rfC9kbM8ZvgogM7j-77-tEIbedfLjWSB4t4COgux3V-QiGU1BoFAFVc2ysj73XJZgfqE9HhcIg13Wa5l-8gtmXF0s4vCOMef5eu6-BuclGJbSfwGxeBUtOOukDGHkRFDOByTYWlHoCogyxogczQG0kD12tSR5Q_d4xjg6F9_FvHObwh0pP0PdMcPLtiu280JsCVUEk"
+              /><span class="font-headline-sm text-headline-sm text-on-surface"
+                >Baila con estilo</span
+              >
+            </div>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-xs"
+            >
+              Espacio creativo de danza, técnica y expresión urbana en
+              movimiento continuo.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="font-headline-sm text-headline-sm text-on-surface mb-space-md"
+            >
+              Explora
+            </h4>
+            <ul class="space-y-space-xs">
+              <li class="font-body-md text-body-md">
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Estilos Coreográficos</a
+                >
+              </li>
+              <li class="font-body-md text-body-md">
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Horarios y Aulas</a
+                >
+              </li>
+              <li class="font-body-md text-body-md">
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Membresías y Bonos</a
+                >
+              </li>
+              <li class="font-body-md text-body-md">
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Workshops &amp; Masterclasses</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-headline-sm text-headline-sm text-on-surface mb-space-md"
+            >
+              Contacto
+            </h4>
+            <div
+              class="space-y-space-xs font-body-md text-body-md text-on-surface-variant"
+            >
+              <p>Av. de la Danza 124, Estudio 3</p>
+              <p>info@bailaconestilo.com</p>
+              <p>+34 912 345 678</p>
+            </div>
+          </div>
+          <div>
+            <h4
+              class="font-headline-sm text-headline-sm text-on-surface mb-space-md"
+            >
+              Comunidad
+            </h4>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant mb-space-sm"
+            >
+              Sigue nuestras coreografías y sesiones de práctica abierta en
+              redes.
+            </p>
+            <div class="flex items-center gap-space-sm">
+              <a
+                aria-label="Instagram"
+                class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[20px]"
+                  >photo_camera</span
+                ></a
+              ><a
+                aria-label="TikTok"
+                class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[20px]"
+                  >music_note</span
+                ></a
+              ><a
+                aria-label="YouTube"
+                class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[20px]"
+                  >smart_display</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"
+        >
+          <p>© 2025 Baila con estilo. Todos los derechos reservados.</p>
+          <div class="flex items-center gap-space-md">
+            <a class="hover:text-on-surface transition-colors" href="#"
+              >Privacidad</a
+            ><a class="hover:text-on-surface transition-colors" href="#"
+              >Términos</a
+            ><a class="hover:text-on-surface transition-colors" href="#"
+              >Cookies</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
